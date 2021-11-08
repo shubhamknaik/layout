@@ -9,30 +9,29 @@
     <title>P!</title>
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-          <input type="checkbox" id="check" />
-          <label for="check" class="menu-btn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <a href="index.html" class="logo">LOGO</a>
-          <ul class="navlinks">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <nav class="navbar">
+      <div class="logo">LOGO</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="a">Home</a></li>
+          <li><a href="a">About Us</a></li>
+          <li><a href="a">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class = "columnA">
+      <div class="box1"></div>
         <h2>Column A</h2>
-         
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error, saepe enim corrupti delectus pariatur eius, natus aliquid, quas esse exercitationem velit. Maiores soluta, inventore et beatae cupiditate laborum dolorum!</p>
-
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error, saepe enim corrupti delectus pariatur eius, natus aliquid, quas esse exercitationem velit. Maiores soluta, inventore et beatae cupiditate laborum dolorum!</p>
     </div>
      
     <div class = "columnB">
+      <div class="box2"></div>
         <h2>Column B</h2>
          
 
@@ -42,6 +41,7 @@
     </div>
      
     <div class = "columnC">
+      <div class="box3"></div>
         <h2>Column C</h2>
          
 
@@ -51,5 +51,13 @@
     <div class="footer">
         <p>Footer</p>
       </div>
+      <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('Click' , () => {
+          navbarLinks.classList.toggle('active')
+        })
+        </script>
 </body>
 </html>

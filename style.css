@@ -1,75 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@font-face {
-  font-family: AstroSpace;
-  src: url(/fonts/AstroSpace.ttf);
+*{
+  box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
 }
-header {
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: gray;
-}
-.main-nav {
-  height: 90px;
+  color: white;
 }
 .logo {
-  color: white;
-  line-height: 90px;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 30px;
-  font-family: "AstroSpace", sans-serif;
+  font-size: 1.5rem;
+  margin: .5rem;
 }
-.navlinks {
-  list-style: none;
-  float: right;
-  line-height: 90px;
+.navbar-links ul {
   margin: 0;
   padding: 0;
+  display: flex;
 }
-.navlinks li {
-  display: inline-block;
-  margin: 0px 20px;
+.navbar-links li {
+  list-style: none;
 }
-.navlinks li a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s linear 0s;
-  text-transform: uppercase;
+.navbar-links li a {
+ text-decoration: none;
+ color: white;
+ padding: 1rem;
+ display: block;
 }
-.navlinks li a:hover {
-  color: #7ebcb9;
-  padding-bottom: 7px;
-  border-bottom: 2px solid #7ebcb9;
+.navbar-links li :hover {
+  background-color: #7ebcb9;
 }
-li a.contact {
-  background-color: #00adb5;
-  padding: 9px 20px;
-  border-radius: 50px;
-  transition: all 0.3s ease 0s;
-  border-bottom: none;
-}
-li a.contact:hover {
-  background-color: #047e85;
-  color: white;
-  border-bottom: none;
-}
-#check {
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
-.menu-btn {
-  font-size: 25px;
-  color: white;
-  float: right;
-  line-height: 90px;
-  margin-right: 40px;
-  display: none;
-  cursor: pointer;
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .columnA, .columnB, .columnC {
@@ -77,9 +56,7 @@ li a.contact:hover {
     width: 28%;
     padding: 15px;
     text-align:justify;
-    padding-top: 250px;
-    margin: 0 1.5% 24px 1.5%;
-    height: 200px;
+    margin: 20px;
     color: gray;
     position: relative;
 }
@@ -94,12 +71,27 @@ h2 {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 80px;
     background-color: gray;
     color: white;
     text-align: center;
 }
 .footer p{
     font-size: 18px;
-    margin-top: 20px;;
+    margin-top: 20px;
+}
+
+.box1{
+  width:100%;
+  height: 300px;
+  background:grey;
+}
+.box2{
+  width:100%;
+  height: 300px;
+  background:grey;
+}
+.box3{
+  width:100%;
+  height: 300px;
+  background: grey;
 }
